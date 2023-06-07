@@ -1,0 +1,291 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.my_nav {
+
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 50px;
+}
+
+.difficulty {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 13px;
+  justify-content: center;
+  margin-left: -130px;
+}
+
+.modes {
+  padding: 5px;
+  cursor: pointer;
+  height: 30px;
+}
+
+.modes:hover {
+  background-color: rgb(33 161 200);
+  border-radius: 5px;
+}
+
+.refresh {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #b7d63b;
+  border: 0px;
+  color: white;
+  height: 28px;
+  border-radius: 4px;
+}
+
+table {
+  border-collapse: collapse;
+  border-left: 5px solid;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+
+}
+
+td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.myheader {
+  font-family: 'Baloo Bhaina 2', cursive;
+  text-align: center;
+  font-size: 50px;
+  color: #73ff00;
+  margin-top: 20px;
+}
+
+.lives {
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.my_input {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  border: 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+.my_input:hover {
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: lightblue;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+  margin-top: -9px;
+  flex-wrap: wrap;
+}
+
+.game_elements {
+  display: flex;
+  flex-direction: column;
+  margin-right: 29px;
+  gap: 42px;
+  justify-content: center;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gamestatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  background-color: #3e30c2;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+.numpad {
+  width: 222px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 43px;
+  margin-top: 150px;
+  gap: 5px;
+  justify-content: center;
+  height: 222px;
+}
+
+.numElements {
+  width: 70px;
+  height: 70px;
+  background-color: #f3ff76;
+  opacity: 0.9;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  color: #1a1aff;
+  font-weight: 450;
+  font-size: 32px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.numElements:hover {
+  opacity: 0.75;
+}
+
+@media(max-width : 602px) {
+  .game_elements {
+    flex-direction: row;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 38px;
+    gap: 42px;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .difficulty {
+
+    margin-left: -21px;
+  }
+
+  .gamestatus {
+
+    width: 120px;
+    height: 50px;
+    background-color: transparent;
+
+  }
+
+  .numpad {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width : 511px) {
+  .my_nav {
+    gap: 30px;
+  }
+
+  .difficulty {
+
+    font-size: 14px;
+    gap: 5px;
+  }
+
+  td {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  .myheader {
+    font-size: 32px;
+  }
+
+  .my_input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width : 400px) {
+  td {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  .my_input {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+
+}
+
+@media (max-width : 350px) {
+  td {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  .my_input {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+
+}
